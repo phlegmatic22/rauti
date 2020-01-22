@@ -1,0 +1,14 @@
+<eDNAproReports_Report>
+  <Report Name="popup_trend" ID="popup_trend" Version="3.0.0.0" DynamicBaseType="">
+    <Info Title="" Owner="INFOC2015\Administrator" Expiration="" Category="" Version="" ModifiedBy="INFOC2015\Administrator" ModificationDate="2020-01-14T09:18:27" CreatedDate="2020-01-14T09:16:35" CreatedBy="" Global="True" Template="False" SnapshotTime="">
+      <Comment />
+      <Description />
+    </Info>
+    <Viewer ReportName="popup_trend.rpx" ClassName="Layout" Layout="" />
+    <DataSources />
+    <Parameters />
+    <Connections />
+    <HyperLinks />
+    <UserRights />
+  </Report>
+</eDNAproReports_Report>

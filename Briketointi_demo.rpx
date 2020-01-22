@@ -1,0 +1,997 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3.1" PrintWidth="18420" DocumentName="ARNet Document" ScriptLang="C#" UserData="AAEAAAD/////AQAAAAAAAAAEAQAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuSGFzaHRhYmxlBwAAAApMb2FkRmFjdG9yB1ZlcnNpb24IQ29tcGFyZXIQSGFzaENvZGVQcm92aWRlcghIYXNoU2l6ZQRLZXlzBlZhbHVlcwAAAwMABQULCBxTeXN0ZW0uQ29sbGVjdGlvbnMuSUNvbXBhcmVyJFN5c3RlbS5Db2xsZWN0aW9ucy5JSGFzaENvZGVQcm92aWRlcgjsUTg/AAAAAAoKCwAAAAkCAAAACQMAAAAQAgAAAAAAAAAQAwAAAAAAAAALAAAAAAAAAAAAAAAAAAAAAA==" MasterReport="0">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; text-decoration: none; font-weight: normal; font-size: 10pt; color: Black" />
+    <Style Name="Heading1" Value="font-size: 16pt; font-weight: bold" />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-size: 14pt; font-weight: bold; font-style: italic" />
+    <Style Name="Heading3" Value="font-size: 13pt; font-weight: bold" />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader1" Height="63200" BackColor="16777215">
+      <Control Type="AR.Field" Name="TextBox9" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;22811&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;FormatProperties&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;1&lt;/PropertyGroup_Id&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="17375.04" Top="1166.401" Width="630" Height="288" Text="PrintTime" OutputFormat="HH:mm" Style="text-align: right; white-space: inherit" />
+      <Control Type="AR.Field" Name="TextBox17" Tag="" Left="15035.04" Top="1166.401" Width="1260" Height="288" Text="Tulostusaika:" OutputFormat="dd.MM.yyyy" Style="white-space: inherit" />
+      <Control Type="AR.Image" Name="Picture1" Left="15664.32" Top="0.0006866455" Width="2340.72" Height="879.84" LineColor="16777215" LineWeight="0" SizeMode="2">0D0D0004024F0C000089504E470D0A1A0A0000000D494844520000008500000041080200000070C1F0C90000000467414D410000B18F0BFC6105000000097048597300000EC200000EC20115284A8000000BF149444154785EED9BF75B564716C7F73FD9CD66B3C56C628C662DD14453D4D8A231A8A85151D428365414B16043110B566C8005C5DEB06041C582821A1B11141511156C60C18205DD8FCC7833EFDCB7A3BBF787FB7DCEE343EE393377EE7C674E9977F2A7D736AC049B0F6BC1E6C35AB0F9B0166C3EAC059B0F6BC1E6C35AB0F9B0166C3EAC059B0F6BC1E6C35AB0F9B0166C3EAC059B0F6BE19DF15156F624232B67E2B4D5ED8226D76C38E0A39AC1FFFA4F6F43FE5ABD7BC316E1A1118B1256ECCE395FF8ECD90BD9EC2D2A2A5E3D7AF43475CF89F131C9813DA654ABFD475BE41FB57AFDBB6E9F660191616312D66E3A947FF5E6AB57AF644B4F888BDFD6BE7B347D76EA1923A46370CC88F14B9F3FD7C760466EDEB5DEA1737EEE1265B4752A7CF29849490CECE6ED7B2F5E56C8C67EE11DF0F1E4E9B33DE9A75A058EFFF327DDFEF26910FF7A94095357D14AB6AFEC61434A46939F46419B66E9543EA81E14BF7C976CEC169BB71FAD5E3F446B8EC077D1CD5269E41A93A6AFD11ABA123E9C5155ABF32B2BB2A4F4A16CEF3BAACA47E1F5DBC1FD676983F3284D7F1E5D50784BF4C076E9D0638A66E051068F5C2C9ABB417E41319B526B2884EDBB7DF77169E70257AFDDFEB1E39B45E6AB74EB3BE3DEFD47B2171F51253E20A355E0386D3486B0640CD15450281651DEA51B8D5A3A9F32B5B9B987A1A3E3C518DCA0D7A0395A2B433EFCACFBF4B91BDD3BBD2359397FFB3C586BE8A524AED8FDB2C21FC7E53F1F048C4123166AE3E03B091E3FFD3291F90A1FBB64586422323A2AA973EF69F59A0CF9E29B411860B67049AAE804CFAB3647987A2C71D9A22D423FEC86806E931BFC10F659837ED8FCF38B5E1BB71E113DB842D29A7D441DA35B9C89F1B7105EED7ECA525233557B7C290363677FDF7AA490C66D467EFB63448DAFFA9B3BFFBAF930E64776E40BFCE723EBB70BDA201871FF61F3AF5C958E4803F1F374767EF4CC75C3231385B35AB62A8D58ADF6C00C12695D79F6F2F2E769E9A73158B434D5FDD2BE7CA59899527BEE3B64DEE75F0F509F1057D41866C6CCF99B557B5603E3973A05C74EE675EE3555DBC11FD6E87129BF485AF8023FF978FCA49C65AB8E0061A6A4DA3B9837476CDCE6172F5E4A7515401AA6F50C432143E3D427C4DED3D9976503134AEE95050F70888B8C96F449AA1D71FFC1238D7E96E6EEFD27A5DA17F8C9C7DD9207DFB41AA18E80ECE8968BE13A0513D4B0F970B587EF5A4794DE2B93EA2A0057A66DBB590BB6F07CDA9C0D2C5BE3214ECF4D48BF78F9061EC93046587F52E70CEC3FD5F87FCD47F1AD52D53B23E4F852E71DF61D3C43A4517BC08FB97720DE802226A0EB24B55BD60D7907AAAD3BB328628CE77083F314ADCC389C79CEB014326FF136A9730606AF1A13268F1ECB953A5FE0271F45C525EAEB116641EABCC3AEBDBF1109D51E7A0E9CCD6C4AB5BFC0E3A97D22C63A257F25A15055F87DA13263CDC683AA258916B5AAD43943CB0E6355FBBFD7EA890B913A5FE0271FB7EFDCAFF35DA83A828FEBF659B7F990547B8153672FD76D3C44ED816FC83A715EAAFD42EE85429C9EDA67BFB0F946294042A1BD91AD23541A481C8885AA25DE98D45CAA4DD8B6EB985675F6E837D3BFBDEE271F0FCB9E98CB40FCCFCAB5FB096ED2C813B435851051F8B6070F1F4B0B1F11316199D6A116B1C956552D0376FA2EE276C7E018D5B26B9F19AEF62ECFC9EF556324F3B89F0BCB4F3EC0CEB413DA2010D2BEC01E5336A464B84A4554686B5008B97CEFD0393BF61CBF517457DA79878319D99A039C316F939616E3125503C209ADA44E41764E418DCA42C7909859EBA54E01A9E0854BD7A14AB544464D5CFEB4DCCF40E83F1FF8816E7DF5A118C24A9CBD30850F93D6CE70E7EE032D8731045628091392769DBF785D5A7B8296CEE2F1718952F71613A6AE1205A910D2B0F55B0E4B9D82BD074E1B3642824262891F4B56EE599A9C862C5FBD977FD98E9F7EA91F8EE1A9FCDEDFC07F3E407E413185A836205528C1C6C724BBF1BC878E9ED3B22C4D70F173176F25FB940D5C60F3F6A35A453667518AD429485E9FAEA6C21FD50C66D1489D02D68161E3BD90B00D1915EF5F596EA04A7C809CF385E6B24E935A8D06C62FDF450929DB3862FFA1336DBB44994FA854A1DA22AEC806CE40DC56EDEB370DCBCDBB26750AD20F9F55535EAA04730D4B68349F037914AA992D3B326517554055F900AC88B8F86DAE8E050D193725D9D54F0ED76FDCC5D733895A135528A7491664034768074DC8B2556952E7083C989608E172A5EE2DAE5CBDD5A4AD43D8F746181E5BCDEFB061E01DF021C06724AED84D5AC24AD1C66A086E575A3BC3D97357162D4D65B7998FE784E0D958E0D2FA2D28E93BF79EA69A7DD56C1889AF543B829A40738FE694F7D8C93CD500A9F3FDE0D69D26346F1729A455E038F62BD9B9668610515CB9012FF1CEF8106034D45F2448EAC98421A4B34EDD880A2AFF4DDB8E989316214CBDB47B8B95EBF66B36C412A2749FC1730F64649B4F706B7FEB5036D56B32442ADE02B7A31AE0D3E6276E27A9CDBF7A53087525695546560EBECEBCF8F61D3C233BF20BEF980F01B62DAC38FD6984E993466EC1AA5FBBE9905672221474C74FE649A3D7AF4B4A1F6A9B83FC82426C64652142CE4A80D532B416ED1D8A1E621BF32B75A4B02F2BA267AED30C0E679E936A1326CF580B61AA7D48585C5542FA7BE1438045D4B88D9ECEBA39323283E2E0937A7DD5E67CBCF1DB098033558BE0F1783E60F802E3096169CAAC756C3BD1E4D7D0B9860AA16439977B55A840C9BD32ED572C6A3D37E7A49459DA3752C9FF3F7FAF750F22B03A56645CF4CA8A0A6FAF22E0FDC44A5725366EB3D096973F1F18EE90087DD964E899DFAFA0D2D22D048F4FD2F1ECD90B7CA9FA1CBEA9364487E0527E9176A642AE25752ED0B9D754D51E292A2E913ADFF17EF9D8937E4A3B06A622933AEF402C519B234661613E20601F0895990F21A7B3F3274E5BAD9584496BF68956C0FC23DBA4E96BA4CE05DA7476382C21F8DFBE735FEA7CC7FBE563D58603EA5891319392BCFF61196FBE78D94EAD87D8B84DA81E3D2ED7269DC489D4483434F3413E1A357D3561890E29038DE7F0A1667DAB1D078CE586940CA97306D213AD226E161089D3936ADFF17EF96031AA634556288BD12370C4DA0D0FAA39760C2A428BFA1C21D714AD80C6078950764E8158070418958F6AB57BB368442BDCE3E8A824438530D7C201BAC2D4D91B547B64E8E878D68A54FB8EF7C807C156ABBA89C6A48952ED098407FC8FDA1CF921608CC85EC646AF549F33C569E97F8401838FEEFD628F1ECB557724C9ABCA07438203A1C2EF6BF4B7ED12E5E6274B028FF69B3CA20EC30FF8CC07096BCB0E63C9EE93D7A7BB3A987AF0F03189A039370F8D5884362E613B450071922A812AD2E9CD049254169AF9BACDA889CBD19E3C73898DA23E0FEE3F4B3D0F27E6936D6FDC7AC49C7AF2526D6024054285F3D1AABC61918942A5E1FA8DBBC415F36122D5E29DBBFEFC0C65C0673E02BABD39AD62E1E3919956F2964E3DDF5CBF64E8C32BAFE7906FF0DC5CBE32B9E257016A5DFE53F440F46BD4329CD9349A878D4920C5D4AA3621BC4B1CE39B838A56F93F2C7B82AF737A759331F05EA321C3181C21AFD6B1938CE742AAD70F61F119177C1071C7871CCCE9D52C8F77EC3CC2673E3E765C9842F82A4334952109496F6E78B2B429893515E2B1073C8370059597F01CBC0A5B41ADE9DCE3C4A98BEA27F03AC10759F882253B8CE77E081F58C5CBBBC0673EB4AB1BDE08BE85BC4534E70F2D03F6461AB60837028F769E8144C7AE152A6F4079AF2D29E145F1B16A15E993B0579626A7559D0CE0331F1468BCFE83EAEEB682214C3D2E28BFA05836AEFC6CE36A8CFB1EC45EA9D56820499A1A54C97755338F299006F6871A7B7885B87A4AD1D0BE7BB4F1DCBD88B1F1075D8584C5B1E945E75587CF7C50E21614DE22E924A0B50B9A5CBF691893CEA61142D8C0E79205850C8D5BB3F120198B395CB38E28834907A096FCA746837EB4327A20D8B27E3B06C7848F5DB23EE530D3A49DD21F3CF23B1128B0C79480AE93824262DD1C2E39056FA7A224C8F10A08A05C17075CF8AB94D44CF22BF57F24702AA215091E0964D1CD523A747F59D227F8CC878DF70A9B0F6BC1E6C35AB0F9B0166C3EAC059B0F6BC1E6C35AB0F9B0166C3EAC059B0F6BC1E6C35AB0F9B0166C3EAC059B0F6BC1E6C35AB0F9B0166C3EAC059B0F6BC1E6C34A78FDFABF54D607B61B13A17E0000000049454E44AE426082</Control>
+      <Control Type="AR.Field" Name="TextBox14" Tag="&lt;FieldConfigurationDS xmlns=&quot;http://tempuri.org/ChartConfiguration.xsd&quot;&gt;&#xD;&#xA;  &lt;FieldConfiguration FieldConfiguration_Id=&quot;0&quot;&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;DataBinding&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;      &lt;Property&gt;&#xD;&#xA;        &lt;Name&gt;DataField&lt;/Name&gt;&#xD;&#xA;        &lt;Value&gt;22810&lt;/Value&gt;&#xD;&#xA;        &lt;PropertyGroup_Id&gt;0&lt;/PropertyGroup_Id&gt;&#xD;&#xA;        &lt;CustomData /&gt;&#xD;&#xA;        &lt;Description /&gt;&#xD;&#xA;      &lt;/Property&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;    &lt;PropertyGroup&gt;&#xD;&#xA;      &lt;FieldConfiguration_Id&gt;0&lt;/FieldConfiguration_Id&gt;&#xD;&#xA;      &lt;Name&gt;FormatProperties&lt;/Name&gt;&#xD;&#xA;      &lt;PropertyGroup_Id&gt;1&lt;/PropertyGroup_Id&gt;&#xD;&#xA;    &lt;/PropertyGroup&gt;&#xD;&#xA;  &lt;/FieldConfiguration&gt;&#xD;&#xA;&lt;/FieldConfigurationDS&gt;" Left="16205.04" Top="1166.401" Width="1170" Height="288" Text="PrintDate" OutputFormat="dd.MM.yyyy" Style="text-align: right; white-space: nowrap" />
+    </Section>
+    <Section Type="PageHeader" Name="PageHeader1" Height="360" BackColor="16777215" />
+    <Section Type="Detail" Name="Detail1" Height="360" BackColor="16777215" />
+    <Section Type="PageFooter" Name="PageFooter1" Height="360" BackColor="16777215" />
+    <Section Type="ReportFooter" Name="ReportFooter1" Height="360" BackColor="16777215" />
+  </Sections>
+  <ReportComponentTray />
+  <Script><![CDATA[static int lineWidth = 2;
+
+  
+static System.Drawing.Color[] serieColors = new System.Drawing.Color[6]{
+	System.Drawing.Color.Red,
+	System.Drawing.Color.Blue,
+	System.Drawing.Color.Black,
+	System.Drawing.Color.Green,
+	System.Drawing.Color.Indigo,
+	System.Drawing.Color.Brown
+	};
+
+
+static System.Drawing.Color backColor = System.Drawing.Color.White; // Background color for the trends
+
+static int labelFontSize = 12; // AXIS LABEL SIZE
+static int titleFontSize = 11; 
+
+
+const int graphCount = 2; // IMPORTANT, HOW MANY TREND PICTURES ARE GENERATED
+static string[] graphTitles = new string[graphCount]{"Kuvaaja1","Kuvaaja2"}; // What are the titles of the generated trends
+
+// 1. Title 2. Time step suffix
+static string[][] timeSteps = new string[][]{new string[]{"Perustaso", ""},new string[]{"Tuntitaso", "_L2-1H-AVG"}, new string[]{"Päivätaso", "_L2-1D-AVG"}};
+
+
+static string header = "PÄÄOTSIKKO";
+static string header2 = "ALAOTSIKKO";
+
+
+
+static float spacer = 1.5f;
+static float yStart = 1.8f;
+static float graphHeight = 8.0f;
+static float xStart = 0.45f;
+static float graphWidth = 12.0f;
+static float reportWidth = 14.0f;
+
+public void ActiveReport_ReportStart()
+{
+	string startTime = g_Parameters["startTime"];
+	string endTime = g_Parameters["endTime"];
+	string scaleMode = g_Parameters["Skaalaus"];
+	var culture = System.Globalization.CultureInfo.CurrentCulture.ToString();
+	startTime = DateTime.Parse(startTime, new System.Globalization.CultureInfo(culture, false)).ToString();
+	endTime = DateTime.Parse(endTime, new System.Globalization.CultureInfo(culture, false)).ToString();
+	
+	string supportFileName = "Briketointi_demo.mrx"; // IMPORTANT, WHAT IS THE NAME OF THE .mrx FILE
+	string reportDnaPath = "/jannen_ominaisuudet/"; // IMPORTANT, WHERE IS THE REPORT-FILE LOCATED IN DNAreport FOLDER
+	string reportPathTemplate = "/DNA/DNAReport/Viewer.aspx?Report="+reportDnaPath+supportFileName+"&startTime=[STARTTIME]&endTime=[ENDTIME]&Jakso=[SPANMODE]&Skaalaus=[SCALEMODE]&Aikataso=";
+	string tracerImageLink = @"D:/DNA/Data/IA/DNAreport" + reportDnaPath + "tracerpicture.png";
+	string tracerPathTemplate = "/DNA/DNATracer?report=_dnause/Trend&tags=";
+	
+	string[] titles1 = new string[] {"","Mittaus1","Mittaus2"}; // Axis-titles of the first generated trend file. First is title of the time-axis and the rest are for vertical axes.
+	string[] titles2 = new string[] {"","Mittaus1","Mittaus2"};
+	//string[] titles3 = new string[] {"","Mittaus1","Mittaus2","Mittaus3"}; // IMPORTANT, COMMENT OUT THOSE ARRAYS THAT ARE NOT NEEDED
+	//string[] titles4 = new string[] {"","Mittaus1","Mittaus2","Mittaus3","Mittaus4", "Mittaus5", "Mittaus6"};
+
+	string[][] titlesList = new string[][]{titles1,titles2}; //  IMPORTANT, ADD HERE THE TITLE-ARRAYS THAT ARE GOING TO BE USED. ONE ARRAY FOR EACH TREND.
+
+
+
+
+	string[] formats1 = new string[] {"line","line"}; //  IMPORTANT, TYPE "line" IF YOU WANT TO GENERATE LINE-TREND. TYPE "points" IF YOU WANT TO GENERATE POINT-TREND (Test-version).
+	string[] formats2 = new string[] {"line","line"};
+	//string[] formats3 = new string[] {"line","line","line"}; // IMPORTANT, COMMENT OUT THOSE ARRAYS THAT ARE NOT NEEDED
+	//string[] formats4 = new string[] {"line","line","line","line", "line", "line"};
+	
+	string[][] formatList = new string[][]{formats1,formats2};//  IMPORTANT, ADD HERE THE FORMAT-ARRAYS THAT ARE GOING TO BE USED. ONE ARRAY FOR EACH TREND.
+	
+	
+
+
+	//  IMPORTANT, ADD ONE    " new int[]{*high limit*, *low limit*, *increment*} "     FOR EACH OF THE GRAPHS IN ONE TREND. 
+	int[][] limitsAndIncrement1 = new int[][]{new int[]{110, 0, 20},new int[]{100, 0, 20},new int[]{200, 20, 20},new int[]{500, 0, 25},new int[]{500, 0, 25},new int[]{500, 0, 25}};
+	int[][] limitsAndIncrement2 = new int[][]{new int[]{110, 0, 10},new int[]{100, 0, 20},new int[]{500, 0, 25},new int[]{500, 0, 25},new int[]{500, 0, 25},new int[]{500, 0, 25}};
+	//int[][] limitsAndIncrement3 = new int[][]{new int[]{2000, 0, 400},new int[]{500, 0, 25},new int[]{500, 0, 25},new int[]{500, 0, 25},new int[]{500, 0, 25},new int[]{500, 0, 25}}; // IMPORTANT, COMMENT OUT THOSE ARRAYS THAT ARE NOT NEEDED
+	//int[][] limitsAndIncrement4 = new int[][]{new int[]{1500, 0, 50},new int[]{500, 0, 25},new int[]{500, 0, 25},new int[]{500, -500, 25},new int[]{500, 0, 25},new int[]{500, 0, 25}};
+	
+	int[][][] limitsAndIncrementsList = new int[][][]{limitsAndIncrement1,limitsAndIncrement2}; //  IMPORTANT, ADD HERE THE LIMIT-ARRAYS THAT ARE GOING TO BE USED. ONE ARRAY FOR EACH TREND.
+
+
+
+
+
+	string[] tagList1 = new string[]{"BR211LIS371.4;avg","BR211LIS371:av;avg"}; //  IMPORTANT, ADD THE POSITIONS THAT YOU WANT TO ADD TO THE TREND. ";" SEPARATES THE POSITION AND THE QUERY OPERATION.
+	string[] tagList2 = new string[]{"BR211LIS376.4;avg","BR211LIS376:av;avg"};
+	//string[] tagList3 = new string[]{"MA111FIC105:me;avg","MA111FIC115:me;avg","MA421FV819a17:av;avg"}; // IMPORTANT, COMMENT OUT THOSE ARRAYS THAT ARE NOT NEEDED
+	//string[] tagList4 = new string[]{"MA111FIC105:me;avg","MA111FIC115:me;avg","MA111FIC125:me;avg","MA111FIC135:me;avg","MA241FIC104:me;avg","MA243FIC578:me;avg"};
+
+	string[][] tagLists=new string[][]{tagList1,tagList2}; //  IMPORTANT, ADD HERE THE LIMIT-ARRAYS THAT ARE GOING TO BE USED. ONE ARRAY FOR EACH TREND.
+	
+	
+	
+	double differenceInHours = DateTime.Now.Subtract(DateTime.Parse(endTime)).TotalHours;
+	string currentTS = g_Parameters["Aikataso"];
+	string timeSpanMode = g_Parameters["Jakso"];
+	
+	if(currentTS != ""){
+		for (int i = 0; i < tagLists.Length; i++ )
+		{
+			for (int j = 0; j < tagLists[i].Length; j++)
+			{
+				if(tagLists[i][j].Contains("-")) throw new Exception("");
+				tagLists[i][j] = tagLists[i][j].Split(';')[0] + currentTS + ';' + tagLists[i][j].Split(';')[1];
+			}
+		}
+	
+	}
+
+	string[] distinctTagList =  mergeDistictArrays(tagLists);
+	DataSet dsTagData = getDataSets(distinctTagList,currentTS, tagLists, startTime, endTime);   
+
+	SetHeaders();
+	if(differenceInHours > 1){
+		setHistoryIndication();
+		g_Parameters["autoUpdateInterval"] = null;
+	};
+	
+	string currentPath = reportPathTemplate.Replace(  "[STARTTIME]", startTime  );
+	currentPath = currentPath.Replace("[ENDTIME]",endTime);
+	SetTimeStepMenu(timeSteps, currentPath, currentTS, reportPathTemplate, timeSpanMode, scaleMode);
+
+
+	for (int i = 0; i < graphCount; i++){
+		
+	
+		try{
+
+			string[] titles_i = titlesList[i];
+			for(int titleNo = 1; titleNo < titles_i.Length; titleNo++){
+				
+				string axisTitle = titles_i[titleNo];
+
+				string unit = dsTagData.Tables["info"+i.ToString()].Rows[titleNo - 1]["Unit"].ToString();
+
+				if(unit == "") unit = "kg / nm3";
+				if(axisTitle.Substring(axisTitle.Length - 1) ==")"){}else{
+					string newTitle = axisTitle + "    (" + unit + ")";
+					titles_i[titleNo] = newTitle;
+				}
+				
+
+			}
+		}catch(Exception e){
+			
+			throw new Exception(dsTagData.Tables.Count.ToString()+" taulua; "+dsTagData.Tables["info0"].Rows.Count.ToString()+" riviä infossa; "+currentTS+" taso  "+ e.ToString());
+		}
+		int seriesCount = tagLists[i].Length;
+
+		setReportConfigs(dsTagData);
+
+
+		CustomControl currControl = new  CustomControl(new Steema.TeeChart.TChart().GetType());
+		Steema.TeeChart.TChart currChart = (Steema.TeeChart.TChart) currControl.Control;
+		
+		currControl.Height = graphHeight;
+		currControl.Width = graphWidth + 1.0f;
+		if(formatList[i].Length > 4){
+			currControl.Width = graphWidth + 0.5f;
+			currControl.Left = xStart + 0.2f;
+		} 
+		else{
+			currControl.Width = graphWidth + 1.0f;
+			currControl.Left = xStart;
+		}
+
+
+		currControl.Top = yStart + i * (graphHeight + spacer);
+		
+		
+		
+		Picture tracerLink = new Picture();
+		System.Drawing.Image img = System.Drawing.Image.FromFile(tracerImageLink);
+		tracerLink.Image = img;
+		tracerLink.Name = "Pic" + (i + 1).ToString();
+		tracerLink.Top = yStart + (i + 1) * (spacer + graphHeight) - 2.0f;
+		tracerLink.Left = xStart + graphWidth - 0.6f;
+		tracerLink.Width = 0.3f;
+		tracerLink.Height = 0.3f;
+		
+		
+		
+		string lineSpacer = "%0d%0a";
+		string tracerHyperLink = tracerPathTemplate;
+		
+		for(int serieNr = 0; serieNr < seriesCount; serieNr++){
+			tracerHyperLink = tracerHyperLink + tagLists[i][serieNr].Split(';')[0];
+			if(serieNr != seriesCount - 1){
+				tracerHyperLink = tracerHyperLink + lineSpacer;
+			}
+		}
+		tracerHyperLink = tracerHyperLink + "&operationList=";
+		for(int serieNr = 0; serieNr < seriesCount; serieNr++){
+			tracerHyperLink = tracerHyperLink + "Actual";
+			if(serieNr != seriesCount - 1){
+				tracerHyperLink = tracerHyperLink + lineSpacer;
+			}
+		}
+		tracerHyperLink = tracerHyperLink + "&periodList=";
+		for(int serieNr = 0; serieNr < seriesCount; serieNr++){
+			tracerHyperLink = tracerHyperLink + "01:00:00";
+			if(serieNr != seriesCount - 1){
+				tracerHyperLink = tracerHyperLink + lineSpacer;
+			}
+		}
+		//string startTime = System.DateTime.Parse(startTime).ToString("s"); // tarviiko "s"
+		//string endTime = System.DateTime.Parse(endTime).ToString("s");
+		tracerHyperLink = tracerHyperLink + "&startTime=" + startTime + "&endTime=" + endTime + "&Period=00:01:00";
+		tracerLink.HyperLink = tracerHyperLink;
+		
+		currChart.Panel.MarginBottom = 5;
+		currChart.Panel.MarginLeft = 12;
+		currChart.Panel.MarginRight = 12;
+		currChart.Panel.MarginTop = 5;
+	
+		currChart.Header.Visible = true;
+		currChart.Header.Text = graphTitles[i];
+		currChart.Header.Font.Size = 15;
+		currChart.Header.Font.Color = System.Drawing.Color.Black;
+		currChart.BackColor = backColor;
+		
+		currChart.Legend.Visible = false;
+		currChart.Aspect.View3D = false;	
+		currChart.Legend.Visible = false;
+		currChart.Legend.Alignment = Steema.TeeChart.LegendAlignments.Bottom;
+		currChart.Legend.Shadow.Visible = false;
+		currChart.Panel.Brush.Visible = true;
+		currChart.Panel.Bevel.Inner = Steema.TeeChart.Drawing.BevelStyles.None;
+		currChart.Panel.Bevel.Outer = Steema.TeeChart.Drawing.BevelStyles.None;
+		
+		List<Steema.TeeChart.Axis> axes = createCustomAxes(currChart, formatList[i].Length);
+
+		formatSeries(currChart, dsTagData, formatList[i], axes, i);
+		formatAxes(currChart, titlesList[i], formatList[i], limitsAndIncrementsList[i], axes, startTime, endTime, scaleMode);
+		
+		buildLegend(dsTagData, i);
+
+		rpt.Sections["ReportHeader1"].Controls.Add(currControl);
+		rpt.Sections["ReportHeader1"].Controls.Add(tracerLink);
+		dsTagData.Dispose();
+		
+
+	}
+
+	
+	
+
+	
+}
+
+public void formatAxes(Steema.TeeChart.TChart chart, string[] titleList, string[] formatList, int[][] limits, List<Steema.TeeChart.Axis> axisList, string startTime, string endTime, string scaleMode){
+
+	
+	
+	int length = axisList.Count;
+	int titleListLength = titleList.Length;
+	int[] angleList = new int[6]{90,270,90,270,90,270};
+	bool axisBuffer = false;
+	bool axisBufferOtherSide = false;
+	int relativePositionAxes3 = -9;
+	int relativePositionAxes4 = -9;
+	int relativePositionAxes5 = -18;
+	int relativePositionAxes6 = -18;
+	
+
+
+	
+	for (int i = 0; i < length; i++){
+
+		if(i == 0){
+			axisList[0].Title.Font.Size = titleFontSize;
+			axisList[0].Labels.Font.Size = labelFontSize - 2;
+			axisList[0].Labels.Angle = 25;
+			
+		}
+		
+		if(i < titleListLength){
+			axisList[i].Title.Text = titleList[i]; // TÄSSÄ
+		}
+
+		if(i >= titleListLength){
+			//chart.Series[i - 1].Visible = false;
+			axisList[i].Visible = false;
+		}
+
+		if(i == 3){
+			axisList[i].OtherSide = false;
+			axisList[i].RelativePosition = relativePositionAxes3;
+
+		}
+		if(i == 4){
+			axisList[i].OtherSide = true;
+			axisList[i].RelativePosition = relativePositionAxes4;
+		}
+		if(i == 5){
+			axisList[i].OtherSide = false;
+			axisList[i].RelativePosition = relativePositionAxes5;
+		}
+		if(i == 6){
+			axisList[i].OtherSide = true;
+			axisList[i].RelativePosition = relativePositionAxes6;
+		}
+		if(axisBuffer == true && axisList[i].OtherSide == axisBufferOtherSide){
+			axisList[i].RelativePosition = axisList[i].RelativePosition - 2;
+			if(i == 3){
+				relativePositionAxes5 = relativePositionAxes5 - 2;
+			}
+			else if(i == 4){
+				relativePositionAxes6 = relativePositionAxes6 - 2;
+			}
+			axisBuffer = false;
+		}
+
+		if(i != 0){
+			axisList[i].Automatic = false;
+			axisList[i].AutomaticMaximum = false;
+			axisList[i].AutomaticMinimum = false;
+
+			axisList[i].Maximum = limits[i - 1][0];
+			if(axisList[i].Maximum.ToString().Length > 3){
+				axisBuffer = true;
+				axisBufferOtherSide = axisList[i].OtherSide;
+			}
+			
+			axisList[i].Minimum = limits[i - 1][1];
+			axisList[i].Increment = limits[i - 1][2];
+
+			
+			
+			if(scaleMode == "Autoskaalaus"){
+				axisList[i].Automatic = true;
+				axisList[i].AutomaticMaximum = true;
+				axisList[i].AutomaticMinimum = true;
+				
+			}
+
+
+			
+			
+			axisList[i].Title.Angle = angleList[i - 1];
+			axisList[i].Title.Font.Size = titleFontSize;
+			axisList[i].Labels.Font.Size = labelFontSize;
+			axisList[i].Title.Font.Color = serieColors[i - 1];
+			axisList[i].Labels.Font.Color = serieColors[i - 1];
+		}
+		
+
+
+	}
+	
+
+	double span = DateTime.Parse(endTime).Subtract(DateTime.Parse(startTime)).TotalHours;
+
+	if(span > 24 * 5){
+		chart.Axes.Bottom.Labels.DateTimeFormat = "dd.MM.yyyy";
+	}
+	else if(span <= 24 * 5 && span > 24){
+		chart.Axes.Bottom.Labels.DateTimeFormat = "dd.MM.yyyy HH:mm";
+	}
+	else{
+		chart.Axes.Bottom.Labels.DateTimeFormat = "HH:mm ddd";
+	}
+
+	
+
+	int seriesCount = chart.Series.Count;
+	
+	
+	
+	for (int j = 0; j < seriesCount; j++){
+
+		if(j == 0){
+			chart.Series[j].VertAxis = Steema.TeeChart.Styles.VerticalAxis.Left;
+		}
+		if(j == 1){
+			chart.Series[j].VertAxis = Steema.TeeChart.Styles.VerticalAxis.Right;
+		}
+		else{
+			chart.Series[j].VertAxis = Steema.TeeChart.Styles.VerticalAxis.Custom;
+
+		}
+		chart.Series[j].HorizAxis = Steema.TeeChart.Styles.HorizontalAxis.Bottom;
+
+	}
+
+}
+
+public void formatSeries(Steema.TeeChart.TChart chart, System.Data.DataSet ds, string[] formatList, List<Steema.TeeChart.Axis> axisList, int graphNo){
+	
+
+	
+	int actualCount = 0;
+	int avgCount = 0;
+	int formatListLength = formatList.Length;
+	for (int i = 0; i < formatListLength; i++){
+		if(formatList[i] == "points"){
+			
+			Steema.TeeChart.Styles.Points points = new Steema.TeeChart.Styles.Points();
+			
+			int actualTablesCount = 0;
+			for(int tableNo = 0; tableNo < ds.Tables.Count; tableNo++){
+				if(ds.Tables[tableNo].TableName.StartsWith("actual"))actualTablesCount++;
+			}
+
+			points.DataSource = ds.Tables["actual"+graphNo.ToString()+"_"+actualCount.ToString()];
+			points.XValues.DataMember = "ts";
+			points.XValues.DateTime = true;
+			points.YValues.DataMember = "value" + actualCount.ToString();
+			points.CheckDataSource();
+			points.Color = serieColors[i];
+			
+			if(i == 2){
+
+				points.CustomVertAxis = axisList[i+1];
+				
+			}
+			if(i == 3){
+				points.CustomVertAxis = axisList[i+1];
+			}
+			if(i == 4){
+				points.CustomVertAxis = axisList[i+1];
+			}
+			if(i == 5){
+				points.CustomVertAxis = axisList[i+1];
+			}
+			actualCount++;
+			chart.Series.Add(points);
+		}
+		else if(formatList[i] == "line"){
+		
+			Steema.TeeChart.Styles.Line line = new Steema.TeeChart.Styles.Line();
+			line.DataSource = ds.Tables["avg"+graphNo.ToString()];
+			line.LinePen.Width = lineWidth;
+			//line.LinePen.Style = DashStyle.Dash;
+			line.XValues.DataMember = "ts";
+			line.XValues.DateTime = true;
+			line.YValues.DataMember = "value" + avgCount.ToString();
+			line.CheckDataSource();
+			line.Color = serieColors[i];
+			if(i == 0){
+
+				//line.VertAxis = Steema.TeeChart.Styles.VerticalAxis.Left;
+				
+			}
+			if(i == 1){
+
+				//line.VertAxis = Steema.TeeChart.Styles.VerticalAxis.Right;
+				
+			}
+			if(i == 2){
+
+				line.CustomVertAxis = axisList[i+1];
+				
+			}
+			if(i == 3){
+				line.CustomVertAxis = axisList[i+1];
+			}
+			if(i == 4){
+				line.CustomVertAxis = axisList[i+1];
+			}
+			if(i == 5){
+				line.CustomVertAxis = axisList[i+1];
+			}
+			avgCount++;
+			
+			chart.Series.Add(line);
+		}
+		else if(formatList[i] == "bar"){
+		
+			Steema.TeeChart.Styles.Bar bar = new Steema.TeeChart.Styles.Bar();
+			bar.DataSource =  ds.Tables["avg"+graphNo.ToString()];
+			//line.LinePen.Width = lineWidth;
+			bar.XValues.DataMember = "ts";
+			bar.XValues.DateTime = true;
+			bar.YValues.DataMember = "value" + i.ToString();
+			bar.CheckDataSource();
+			bar.Color = serieColors[i];
+			bar.MultiBar = Steema.TeeChart.Styles.MultiBars.Side;
+			bar.Marks.Visible = false;
+			bar.BarWidthPercent = 70;
+
+
+			
+			if(i == 2){
+				bar.CustomVertAxis = axisList[i+1];
+			}
+			if(i == 3){
+				bar.CustomVertAxis = axisList[i+1];
+			}
+			if(i == 2){
+				bar.CustomVertAxis = axisList[i+1];
+			}
+			if(i == 3){
+				bar.CustomVertAxis = axisList[i+1];
+			}
+			
+			chart.Series.Add(bar);
+		}
+	}
+
+
+}
+
+public System.Data.DataSet getDataSets(string[] tagStringList, string currentTS, string[][] tagLists, string startTime, string endTime){
+
+	List<string> tagList = new List<string>();
+	List<string> opList = new List<string>();
+
+	foreach (string s in tagStringList) {
+		tagList.Add(s.Split(';')[0]);
+		opList.Add(s.Split(';')[1]);
+	
+	}
+
+	Metso.DNA.IA.DNAdata.Interfaces.IDNAdataObject dobj = 
+		(Metso.DNA.IA.DNAdata.Interfaces.IDNAdataObject) Metso.DNA.IA.DNAdata.RemoteUtils.CreateRemote("DNAdataObject");
+	
+	
+	DateTime st = DateTime.Parse(startTime);
+	DateTime et = DateTime.Parse(endTime);
+	
+	string period ="";
+	if(currentTS==""){
+		period = "00:15:00";
+	}else if(currentTS=="_L2-1H-AVG"){
+		period = "01:00:00";
+	}else if(currentTS=="_L2-1D-AVG"){
+		period = "1.00:00:00";
+	}
+	else{
+		throw new Exception("Bad timestep ("+currentTS+"). Must be -1H or -1D ");
+	}
+	
+	string[] periodList = new string[1]{period};
+	string[] optionsList = new string[1];
+	optionsList[0] = "TS_START";
+
+
+	System.Data.DataSet dataQuery = (System.Data.DataSet) (dobj.InvokeMethod("Combination", "localhost" + "/Query.BasicQueries.Extended", null, st, et, periodList, optionsList, tagList.ToArray(), opList.ToArray(), new string[]{"(null)"}, new string[]{"(null)"}, new string[]{"(null)"}, new string[]{"(null)"}, new string[]{"(null)"}));
+	
+	
+	System.Data.DataSet tagInfoQuery = (System.Data.DataSet) (dobj.InvokeMethod("TagInformation_List", "localhost" + "/Query.BasicQueries.Information", null, tagList.ToArray(), "(null)"));
+	if(dataQuery.Tables.Count == 0)
+	{
+		throw new Exception("No data");
+	}
+
+	DataSet ds_new = reorganizeData(dataQuery, tagInfoQuery, tagLists, currentTS);
+	//throw new Exception(ds_new.Tables["info0"].Rows[0]["TagName"].ToString()+ds_new.Tables["info0"].Rows[1]["TagName"].ToString()+ds_new.Tables["info0"].Rows[2]["TagName"].ToString()+ds_new.Tables["info0"].Rows[3]["TagName"].ToString());
+	return ds_new;
+}
+public List<Steema.TeeChart.Axis> createCustomAxes(Steema.TeeChart.TChart chart, int length){
+
+
+		
+	Steema.TeeChart.Axis Custom0 = new Steema.TeeChart.Axis(chart.Chart);
+	Steema.TeeChart.Axis Custom1 = new Steema.TeeChart.Axis(chart.Chart);
+	
+	Custom0.AxisPen.Visible = true;
+	Custom0.Grid.Visible = false;
+	
+	Custom1.AxisPen.Visible = true;
+	Custom1.Grid.Visible = false;
+	
+	chart.Axes.Left.Grid.Visible = true;
+	chart.Axes.Right.Grid.Visible = false;
+	
+	chart.Axes.Custom.Add(Custom0);
+	chart.Axes.Custom.Add(Custom1);
+
+	Steema.TeeChart.Axis[] axisArr = new Steema.TeeChart.Axis[5]{
+		chart.Axes.Bottom,
+		chart.Axes.Left,
+		chart.Axes.Right,
+		chart.Axes.Custom[0],
+		chart.Axes.Custom[1]};
+
+	List<Steema.TeeChart.Axis> axisList = new List<Steema.TeeChart.Axis>(axisArr);
+
+	
+	if(length > 4){
+		Steema.TeeChart.Axis Custom2 = new Steema.TeeChart.Axis(chart.Chart);
+		Custom2.AxisPen.Visible = true;
+		Custom2.Grid.Visible = false;
+		chart.Axes.Custom.Add(Custom2);
+		axisList.Add(Custom2);
+	}
+	if(length == 6){
+		Steema.TeeChart.Axis Custom3 = new Steema.TeeChart.Axis(chart.Chart);
+		Custom3.AxisPen.Visible = true;
+		Custom3.Grid.Visible = false;
+		chart.Axes.Custom.Add(Custom3);
+		axisList.Add(Custom3);
+	}
+
+	return axisList;
+
+}
+
+public void setReportConfigs(System.Data.DataSet ds){
+	// Custom printer settings: fixes broken charts that are in page break position
+	rpt.Document.Printer.PrinterName = "";
+	rpt.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+	// Config -> 35000 so graphs place evenly (one tall paper), might break printing somehow
+	rpt.Document.Printer.PaperSize = new System.Drawing.Printing.PaperSize("CustomSize", 1000, 5000);
+	rpt.PrintWidth = reportWidth;
+	
+	
+	rpt.DataSource = ds;
+	rpt.DataMember = "avg0";
+	rpt.UserData = "";
+}
+
+public void buildLegend(System.Data.DataSet tagInfo, int j){
+
+	string[] texts = new string[3]{"Description", "TagName", "Unit"};
+	string[] textsFin = new string[3]{"Kuvaus", "Positio", "Yksikkö"};
+	float[] widths = new float[3]{3.0f, 3.0f, 3.0f};
+	float colHeight = 0.2f;
+	float linePositionTop = 0.0f;
+	
+	
+	for (int column = 0; column < texts.Length; column++){
+	
+
+		for(int row = 0; row < tagInfo.Tables["info"+j.ToString()].Rows.Count; row++){
+			if(row == 0){
+				TextBox boxColumnHeader = new TextBox();
+				string textColumnHeader = textsFin[column];
+				if(textColumnHeader == "" && column == 0)textColumnHeader = "This is a testing description";
+				if(textColumnHeader == "" && column == 2)textColumnHeader = "kg/nm3";
+				boxColumnHeader.Height = colHeight;
+				boxColumnHeader.Top = yStart + (j + 1) * (graphHeight) + j * spacer + (row * colHeight) - 0.02f;
+				boxColumnHeader.Left = graphWidth / 8 + (column * ( graphWidth / 4));
+				boxColumnHeader.Text = textColumnHeader;
+				boxColumnHeader.Style = "font-size: 11pt";
+				boxColumnHeader.ForeColor = serieColors[2];
+				boxColumnHeader.Width = widths[column];
+				rpt.Sections["ReportHeader1"].Controls.Add(boxColumnHeader);
+			}
+			TextBox box = new TextBox();
+			string text = tagInfo.Tables["info"+j.ToString()].Rows[row][texts[column]].ToString();
+			if(text == "" && column == 0)text = "This is a testing description";
+			if(text == "" && column == 2)text = "kg/nm3";
+			box.Height = colHeight;
+			box.Top = yStart + (j + 1) * (graphHeight) + j * spacer + (row * colHeight) + colHeight;
+			linePositionTop = box.Top + colHeight + 0.5f;
+			box.Left = graphWidth / 8 + (column * ( graphWidth / 4));
+			box.Text = text;
+			box.ForeColor = serieColors[row];
+			box.Width = widths[column];
+			rpt.Sections["ReportHeader1"].Controls.Add(box);
+		}
+		
+
+	}
+	Line separatorLine = new Line();
+	separatorLine.Top = linePositionTop;
+	separatorLine.X2 = 15.0f;
+	rpt.Sections["ReportHeader1"].Controls.Add(separatorLine);
+
+}
+
+
+public void SetHeaders()
+{
+    TextBox headerBox = new TextBox();
+	headerBox.Text = header;
+	headerBox.Left = 0.3f;
+	headerBox.Width = reportWidth - 1.2f;
+	headerBox.Height = 0.35f;
+	headerBox.Style = "color: #00005A; font-size: 20pt; font-weight: bold; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1";
+	rpt.Sections["ReportHeader1"].Controls.Add(headerBox);
+	
+	TextBox headerBox2 = new TextBox();
+	headerBox2.Text = header2;
+	headerBox2.Top = headerBox.Height;
+	headerBox2.Left = 0.2f;
+	headerBox2.Width = reportWidth - 1.0f;
+	headerBox2.Height = 0.35f;
+	headerBox2.Style = "color: #00005A; font-size: 16pt; font-weight: bold; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1";
+	rpt.Sections["ReportHeader1"].Controls.Add(headerBox2);
+	
+	Shape headerRect = new Shape();
+	headerRect.Top = 0.4f + headerBox.Height + headerBox2.Height;
+	headerRect.Left = 0.7f;
+	headerRect.Width = reportWidth - 2.2f;
+	headerRect.Height = 0.25f;
+	headerRect.BackColor = System.Drawing.Color.FromArgb(0, 0, 90);
+	rpt.Sections["ReportHeader1"].Controls.Add(headerRect);
+}
+
+public void SetTimeStepMenu(string[][] timeSteps, string reportPath, string currentTS, string reportPathTemplate, string timeSpanMode, string scaleMode){
+
+
+	float boxWidth = 1.05f;
+	float boxHeight = 0.2f;
+	float boxTop = 0.2f;
+	float timeStepBarLength = timeSteps.Length * boxWidth;
+	float boxLeft = (reportWidth / 10) - 1.0f;
+
+	for(int tsNo = 0; tsNo < timeSteps.Length; tsNo++){
+		if(tsNo == 0){
+			TextBox headerBox = new TextBox();
+			headerBox.Text = "Aikataso";
+			headerBox.Style = "color: #00005A; font-size: 11pt; font-weight: italic; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1";
+			headerBox.Left = boxLeft;
+			headerBox.Top = boxTop - boxHeight;
+			headerBox.Width = boxWidth;
+			headerBox.Height = boxHeight;
+			headerBox.BackColor = System.Drawing.Color.White;
+			//rpt.Sections["ReportHeader1"].Controls.Add(headerBox);
+		}
+		TextBox box = new TextBox();
+		box.Text = timeSteps[tsNo][0];
+		box.Style = "color: #00005A; font-size: 11pt; font-weight: italic; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1";
+		box.Left = boxLeft;
+		box.Top = boxTop+ tsNo * boxHeight;
+		box.Width = boxWidth;
+		box.Height = boxHeight;
+		box.BackColor = System.Drawing.Color.White;
+		string timeStepReportPath = reportPath + timeSteps[tsNo][1];
+		timeStepReportPath = timeStepReportPath.Replace("[SPANMODE]", timeSpanMode);
+		timeStepReportPath = timeStepReportPath.Replace("[SCALEMODE]", scaleMode);
+		box.HyperLink = timeStepReportPath;
+		
+		if(currentTS == timeSteps[tsNo][1]){
+			box.Style = "color: #00005A; font-size: 11pt; font-weight: bold; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1;text-decoration: underline";
+		}
+		rpt.Sections["ReportHeader1"].Controls.Add(box);
+	}
+	
+	float spanBoxWidth = boxWidth;
+	float spanBoxHeight = boxHeight;
+	float spanBoxTop = boxTop;
+	//float spanBoxLength = timeSteps.Length * boxWidth;
+	float spanBoxLeft = boxLeft + spanBoxWidth;
+	
+
+	string[] timeSpans = new string[]{"Päivä", "Viikko", "Kuukausi", "Vuosi"};
+	string dt1 = DateTime.Now.AddDays(-1).ToString();
+	string dt2 = DateTime.Now.AddDays(-7).ToString();
+	string dt3 = DateTime.Now.AddMonths(-1).ToString();
+	string dt4 = DateTime.Now.AddYears(-1).ToString();
+	var cult = System.Globalization.CultureInfo.CurrentCulture.ToString();
+	dt1 = DateTime.Parse(dt1, new System.Globalization.CultureInfo(cult, false)).ToString();
+	dt2 = DateTime.Parse(dt2, new System.Globalization.CultureInfo(cult, false)).ToString();
+	dt3 = DateTime.Parse(dt3, new System.Globalization.CultureInfo(cult, false)).ToString();
+	dt4 = DateTime.Parse(dt4, new System.Globalization.CultureInfo(cult, false)).ToString();
+	string currentTime = DateTime.Parse(DateTime.Now.ToString(), new System.Globalization.CultureInfo(cult, false)).ToString();
+
+	string[] startTimes = new string[]{dt1, dt2, dt3, dt4};
+	for(int spanNo = 0; spanNo < timeSpans.Length; spanNo++){
+
+		TextBox spanBox = new TextBox();
+		spanBox.Text = timeSpans[spanNo];
+		spanBox.Style = "color: #00005A; font-size: 11pt; font-weight: italic; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1";
+		spanBox.Left = spanBoxLeft;
+		spanBox.Top = spanBoxTop + spanNo * spanBoxHeight;
+		spanBox.Width = boxWidth;
+		spanBox.Height = boxHeight;
+		spanBox.BackColor = System.Drawing.Color.White;
+		string spanReportPath = reportPathTemplate + currentTS;
+		spanReportPath = spanReportPath.Replace(  "[STARTTIME]", startTimes[spanNo]  );
+		spanReportPath = spanReportPath.Replace("[ENDTIME]",currentTime);
+		spanReportPath = spanReportPath.Replace("[SPANMODE]", timeSpans[spanNo]);
+		spanReportPath = spanReportPath.Replace("[SCALEMODE]", scaleMode);
+		spanBox.HyperLink = spanReportPath;
+
+		
+		if(timeSpanMode == timeSpans[spanNo]){
+
+			spanBox.Style = "color: #00005A; font-size: 11pt; font-weight: bold; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1;text-decoration: underline";
+
+		}
+		rpt.Sections["ReportHeader1"].Controls.Add(spanBox);
+	}
+	
+	string[] scaleConfigs = new string[]{"Kovaskaalaus", "Autoskaalaus"};
+	float scaleConfigBoxLeft = boxLeft + spanBoxWidth * 2;
+	float scaleConfigBoxHeight = boxHeight;
+	for(int scaleConfigNo = 0; scaleConfigNo < scaleConfigs.Length; scaleConfigNo++){
+		TextBox scaleConfigBox = new TextBox();
+		scaleConfigBox.Text = scaleConfigs[scaleConfigNo];
+		scaleConfigBox.Style = "color: #00005A; font-size: 11pt; font-weight: italic; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1";
+		scaleConfigBox.Left = scaleConfigBoxLeft;
+		scaleConfigBox.Top = boxTop + scaleConfigNo * boxHeight;
+		scaleConfigBox.Width = boxWidth;
+		scaleConfigBox.Height = boxHeight;
+		scaleConfigBox.BackColor = System.Drawing.Color.White;
+		string scaleConfigReportPath = reportPath + currentTS;
+		scaleConfigReportPath = scaleConfigReportPath.Replace("[SPANMODE]", timeSpanMode);
+		scaleConfigReportPath = scaleConfigReportPath.Replace("[SCALEMODE]", scaleConfigs[scaleConfigNo]);
+		scaleConfigBox.HyperLink = scaleConfigReportPath;
+		if(scaleMode == scaleConfigs[scaleConfigNo]){
+
+			scaleConfigBox.Style = "color: #00005A; font-size: 11pt; font-weight: bold; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1;text-decoration: underline";
+
+		}
+		rpt.Sections["ReportHeader1"].Controls.Add(scaleConfigBox);
+	}
+	
+
+}
+
+public DataSet reorganizeData(DataSet ds, DataSet dsInfo, string[][] tagLists, string currentTS)
+        {
+
+            DataSet ds_new = new DataSet();
+
+
+            for (int graphNo = 0; graphNo < tagLists.Length; graphNo++)
+            {
+                List<string> tableNames = new List<string>();
+                tableNames.Add("avg" + graphNo.ToString());
+                string[] graphTags = tagLists[graphNo];
+
+                int actualCount = 0;
+                List<int> avgColIndexes = new List<int>();
+
+                List<int> actualColIndexes = new List<int>();
+
+                DataTable dtInfo = dsInfo.Tables[0].Copy();
+
+                dtInfo.TableName = "info" + graphNo.ToString();
+                List<string> tags = new List<string>();
+                foreach (string s in graphTags)
+                {
+                    tags.Add(s.Split(';')[0]);
+                }
+                DataTable tableTemp = dtInfo.Clone();
+                for (int row = 0; row < dtInfo.Rows.Count; row++)
+                {
+                    string tag = dtInfo.Rows[row]["TagName"].ToString();
+                    if (tags.Contains(tag))
+                    {
+                        tags.Remove(tag);
+						
+                        tableTemp.ImportRow(dtInfo.Rows[row]);
+                        if (tags.Count == 0) break;
+
+                    }
+
+
+                }
+                ds_new.Tables.Add(tableTemp);
+
+                int colIndex = 0;
+
+
+
+                foreach (string tag in graphTags)
+                {
+                    //dtInfo.ImportRow(dsInfo.Tables[0].Rows[colIndex]);
+                    if (tag.Split(';')[1] == "avg") avgColIndexes.Add(colIndex);
+                    if (tag.Split(';')[1] == "actual") { actualCount++; actualColIndexes.Add(colIndex); tableNames.Add("actual" + graphNo + "_" + actualCount); };
+                    colIndex++;
+                }
+                //ds_new.Tables.Add(dtInfo);
+                if (avgColIndexes.Count == 0) tableNames.RemoveAt(0);
+                foreach (string name in tableNames)
+                {
+                    List<string> indexList = new List<string>();
+                    if (name.StartsWith("av"))
+                    {
+
+                        indexList.Add("ts");
+                        foreach (int index in avgColIndexes)
+                        {
+                            indexList.Add("value" + index);
+                        }
+                    }
+                    if (name.StartsWith("ac"))
+                    {
+
+                        indexList.Add("ts");
+                        foreach (int index in actualColIndexes)
+                        {
+                            indexList.Add("value" + index);
+                        }
+                    }
+                    List<string> newColNames = new List<string>();
+                    newColNames.Add("ts");
+                    for (int j = 0; j < indexList.Count - 1; j++)
+                    {
+                        newColNames.Add("value" + j.ToString());
+
+                    }
+                    DataTable newDt = reorganizeTable(ds.Tables[0], name, indexList, newColNames);
+                    ds_new.Tables.Add(newDt);
+
+
+                }
+
+
+            }
+            return ds_new;
+        }
+
+public DataTable reorganizeTable(DataTable dt, string newTableName, List<string> columnNames, List<string> columnNamesNew)
+{ 
+	DataTable dt_new = dt.Copy();
+	dt_new.TableName = newTableName;
+	for (int i = 0 ; i < dt_new.Columns.Count; i++){
+		DataColumn dc = dt_new.Columns[i];
+		if(!(columnNames.Contains(dc.ColumnName))){
+			dt_new.Columns.Remove(dc);
+			i--;
+		}
+	}
+	int j = 0;
+	foreach (string name in columnNamesNew){
+
+		dt_new.Columns[j].ColumnName = name;
+		j++;
+	}
+
+	DataView dv = new DataView(dt_new);
+	string colName = dt_new.Columns[1].ColumnName;
+	dv.RowFilter = colName + " Is Not Null";
+	dt_new = dv.ToTable();
+
+	return dt_new;
+}
+
+public string[] mergeDistictArrays(string[][] arr)
+{
+
+	List<string> comb = new List<string>();
+
+	foreach (string[] a in arr)
+	{
+		comb.AddRange(a);
+	}
+
+
+
+	Dictionary<string, int> uniqueStore = new Dictionary<string, int>();
+	List<string> finalList = new List<string>();
+	foreach (string currValue in comb)
+	{
+		if (!uniqueStore.ContainsKey(currValue))
+		{
+			uniqueStore.Add(currValue, 0);
+			finalList.Add(currValue);
+		}
+	}
+	return finalList.ToArray();
+}
+
+
+public static int GetMonthDifference(DateTime startDate, DateTime endDate)
+{
+	int monthsApart = 12 * (startDate.Year - endDate.Year) + startDate.Month - endDate.Month;
+	return monthsApart;
+}
+
+public void setHistoryIndication()
+{
+	TextBox historyBox = new TextBox();
+	historyBox.Text = "Selaat historiaa";
+	historyBox.Left = 0.8f;
+	historyBox.Top = 1.5f;
+	historyBox.Width = 1.2f;
+	historyBox.Height = 0.35f;
+	historyBox.Style = "color: #F10606; font-size: 11pt; font-weight: italic; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1";
+	rpt.Sections["ReportHeader1"].Controls.Add(historyBox);
+}
+
+
+
+]]></Script>
+  <PageSettings />
+  <Parameters />
+</ActiveReportsLayout>
