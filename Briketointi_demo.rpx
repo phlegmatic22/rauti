@@ -36,13 +36,13 @@ static System.Drawing.Color backColor = System.Drawing.Color.White; // Backgroun
 
 static int labelFontSize = 12; // AXIS LABEL SIZE
 static int titleFontSize = 11; 
-
+static string defaultPeriod = "01:00:00"; // default data query time period as "hh:mm:ss"
 
 const int graphCount = 2; // IMPORTANT, HOW MANY TREND PICTURES ARE GENERATED
 static string[] graphTitles = new string[graphCount]{"Kuvaaja1","Kuvaaja2"}; // What are the titles of the generated trends
 
 // 1. Title 2. Time step suffix
-static string[][] timeSteps = new string[][]{new string[]{"Perustaso", ""},new string[]{"Tuntitaso", "_L2-1H-AVG"}, new string[]{"Päivätaso", "_L2-1D-AVG"}};
+static string[][] timeSteps = new string[][]{new string[]{"Perustaso", ""},new string[]{"Tuntitaso", "-1H"}, new string[]{"Päivätaso", "-1D"}};
 
 
 static string header = "PÄÄOTSIKKO";
@@ -67,7 +67,7 @@ public void ActiveReport_ReportStart()
 	endTime = DateTime.Parse(endTime, new System.Globalization.CultureInfo(culture, false)).ToString();
 	
 	string supportFileName = "Briketointi_demo.mrx"; // IMPORTANT, WHAT IS THE NAME OF THE .mrx FILE
-	string reportDnaPath = "/jannen_ominaisuudet/"; // IMPORTANT, WHERE IS THE REPORT-FILE LOCATED IN DNAreport FOLDER
+	string reportDnaPath = "/PROJECT/jannen_ominaisuudet/"; // IMPORTANT, WHERE IS THE REPORT-FILE LOCATED IN DNAreport FOLDER
 	string reportPathTemplate = "/DNA/DNAReport/Viewer.aspx?Report="+reportDnaPath+supportFileName+"&startTime=[STARTTIME]&endTime=[ENDTIME]&Jakso=[SPANMODE]&Skaalaus=[SCALEMODE]&Aikataso=";
 	string tracerImageLink = @"D:/DNA/Data/IA/DNAreport" + reportDnaPath + "tracerpicture.png";
 	string tracerPathTemplate = "/DNA/DNATracer?report=_dnause/Trend&tags=";
@@ -82,8 +82,8 @@ public void ActiveReport_ReportStart()
 
 
 
-	string[] formats1 = new string[] {"line","line"}; //  IMPORTANT, TYPE "line" IF YOU WANT TO GENERATE LINE-TREND. TYPE "points" IF YOU WANT TO GENERATE POINT-TREND (Test-version).
-	string[] formats2 = new string[] {"line","line"};
+	string[] formats1 = new string[] {"line","bar"}; //  IMPORTANT, TYPE "line" IF YOU WANT TO GENERATE LINE-TREND. TYPE "points" IF YOU WANT TO GENERATE POINT-TREND (Test-version).
+	string[] formats2 = new string[] {"points","line"};
 	//string[] formats3 = new string[] {"line","line","line"}; // IMPORTANT, COMMENT OUT THOSE ARRAYS THAT ARE NOT NEEDED
 	//string[] formats4 = new string[] {"line","line","line","line", "line", "line"};
 	
@@ -104,8 +104,8 @@ public void ActiveReport_ReportStart()
 
 
 
-	string[] tagList1 = new string[]{"BR211LIS371.4;avg","BR211LIS371:av;avg"}; //  IMPORTANT, ADD THE POSITIONS THAT YOU WANT TO ADD TO THE TREND. ";" SEPARATES THE POSITION AND THE QUERY OPERATION.
-	string[] tagList2 = new string[]{"BR211LIS376.4;avg","BR211LIS376:av;avg"};
+	string[] tagList1 = new string[]{"sim1m_1;avg","sim1m_2;avg"}; //  IMPORTANT, ADD THE POSITIONS THAT YOU WANT TO ADD TO THE TREND. ";" SEPARATES THE POSITION AND THE QUERY OPERATION.
+	string[] tagList2 = new string[]{"25FC-100:me;actual","25FC-101:me;avg"};
 	//string[] tagList3 = new string[]{"MA111FIC105:me;avg","MA111FIC115:me;avg","MA421FV819a17:av;avg"}; // IMPORTANT, COMMENT OUT THOSE ARRAYS THAT ARE NOT NEEDED
 	//string[] tagList4 = new string[]{"MA111FIC105:me;avg","MA111FIC115:me;avg","MA111FIC125:me;avg","MA111FIC135:me;avg","MA241FIC104:me;avg","MA243FIC578:me;avg"};
 
@@ -122,7 +122,7 @@ public void ActiveReport_ReportStart()
 		{
 			for (int j = 0; j < tagLists[i].Length; j++)
 			{
-				if(tagLists[i][j].Contains("-")) throw new Exception("");
+				//if(tagLists[i][j].Contains("-")) throw new Exception("");
 				tagLists[i][j] = tagLists[i][j].Split(';')[0] + currentTS + ';' + tagLists[i][j].Split(';')[1];
 			}
 		}
@@ -130,7 +130,7 @@ public void ActiveReport_ReportStart()
 	}
 
 	string[] distinctTagList =  mergeDistictArrays(tagLists);
-	DataSet dsTagData = getDataSets(distinctTagList,currentTS, tagLists, startTime, endTime);   
+	DataSet dsTagData = getDataSets(distinctTagList,currentTS, tagLists, startTime, endTime, defaultPeriod, timeSteps);   
 
 	SetHeaders();
 	if(differenceInHours > 1){
@@ -334,26 +334,19 @@ public void formatAxes(Steema.TeeChart.TChart chart, string[] titleList, string[
 		}
 
 		if(i != 0){
-			axisList[i].Automatic = false;
-			axisList[i].AutomaticMaximum = false;
-			axisList[i].AutomaticMinimum = false;
+			if(scaleMode == "Kovaskaalaus"){
+				axisList[i].Automatic = false;
+				axisList[i].AutomaticMaximum = false;
+				axisList[i].AutomaticMinimum = false;
 
-			axisList[i].Maximum = limits[i - 1][0];
-			if(axisList[i].Maximum.ToString().Length > 3){
-				axisBuffer = true;
-				axisBufferOtherSide = axisList[i].OtherSide;
-			}
-			
-			axisList[i].Minimum = limits[i - 1][1];
-			axisList[i].Increment = limits[i - 1][2];
-
-			
-			
-			if(scaleMode == "Autoskaalaus"){
-				axisList[i].Automatic = true;
-				axisList[i].AutomaticMaximum = true;
-				axisList[i].AutomaticMinimum = true;
+				axisList[i].Maximum = limits[i - 1][0];
+				if(axisList[i].Maximum.ToString().Length > 3){
+					axisBuffer = true;
+					axisBufferOtherSide = axisList[i].OtherSide;
+				}
 				
+				axisList[i].Minimum = limits[i - 1][1];
+				axisList[i].Increment = limits[i - 1][2];
 			}
 
 
@@ -497,24 +490,12 @@ public void formatSeries(Steema.TeeChart.TChart chart, System.Data.DataSet ds, s
 			bar.YValues.DataMember = "value" + i.ToString();
 			bar.CheckDataSource();
 			bar.Color = serieColors[i];
-			bar.MultiBar = Steema.TeeChart.Styles.MultiBars.Side;
+			bar.MultiBar = Steema.TeeChart.Styles.MultiBars.Side; //Stacked, Stacked100, SelfStack, SideAll
 			bar.Marks.Visible = false;
-			bar.BarWidthPercent = 70;
+			bar.BarWidthPercent = 30;
 
+			bar.CustomVertAxis = axisList[i+1];
 
-			
-			if(i == 2){
-				bar.CustomVertAxis = axisList[i+1];
-			}
-			if(i == 3){
-				bar.CustomVertAxis = axisList[i+1];
-			}
-			if(i == 2){
-				bar.CustomVertAxis = axisList[i+1];
-			}
-			if(i == 3){
-				bar.CustomVertAxis = axisList[i+1];
-			}
 			
 			chart.Series.Add(bar);
 		}
@@ -523,7 +504,7 @@ public void formatSeries(Steema.TeeChart.TChart chart, System.Data.DataSet ds, s
 
 }
 
-public System.Data.DataSet getDataSets(string[] tagStringList, string currentTS, string[][] tagLists, string startTime, string endTime){
+public System.Data.DataSet getDataSets(string[] tagStringList, string currentTS, string[][] tagLists, string startTime, string endTime, string defaultPeriod, string[][] timeSteps){
 
 	List<string> tagList = new List<string>();
 	List<string> opList = new List<string>();
@@ -543,10 +524,10 @@ public System.Data.DataSet getDataSets(string[] tagStringList, string currentTS,
 	
 	string period ="";
 	if(currentTS==""){
-		period = "00:15:00";
-	}else if(currentTS=="_L2-1H-AVG"){
+		period = defaultPeriod;
+	}else if(currentTS==timeSteps[1][1]){
 		period = "01:00:00";
-	}else if(currentTS=="_L2-1D-AVG"){
+	}else if(currentTS==timeSteps[2][1]){
 		period = "1.00:00:00";
 	}
 	else{
@@ -785,12 +766,12 @@ public void SetTimeStepMenu(string[][] timeSteps, string reportPath, string curr
 		string spanReportPath = reportPathTemplate + currentTS;
 		spanReportPath = spanReportPath.Replace(  "[STARTTIME]", startTimes[spanNo]  );
 		spanReportPath = spanReportPath.Replace("[ENDTIME]",currentTime);
-		spanReportPath = spanReportPath.Replace("[SPANMODE]", timeSpans[spanNo]);
+		spanReportPath = spanReportPath.Replace("[SPANMODE]", timeSpans[spanNo].Replace('ä','a'));
 		spanReportPath = spanReportPath.Replace("[SCALEMODE]", scaleMode);
 		spanBox.HyperLink = spanReportPath;
 
 		
-		if(timeSpanMode == timeSpans[spanNo]){
+		if(timeSpanMode == timeSpans[spanNo].Replace('ä','a')){
 
 			spanBox.Style = "color: #00005A; font-size: 11pt; font-weight: bold; text-align: center; vertical-align: middle; white-space: nowrap; ddo-char-set: 1;text-decoration: underline";
 

@@ -16,7 +16,7 @@
       <Parameter Name="Aikataso" Type="System.String" InitialValue="" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="Aikataso" Overridable="True" Group="" DisplayIndex="17" />
       <Parameter Name="Pisteiden lukumäärä" Type="System.Int32" InitialValue="90" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="" Overridable="True" Group="" DisplayIndex="17" />
       <Parameter Name="UpdateMinute" Type="System.Int32" InitialValue="1" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="UpdateMinute" Overridable="True" Group="" DisplayIndex="0" />
-      <Parameter Name="ReportPath" Type="System.String" InitialValue="jannen_ominaisuudet/Briketointi_demo" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="ReportPath" Overridable="True" Group="" DisplayIndex="1" />
+      <Parameter Name="ReportPath" Type="System.String" InitialValue="PROJECT/jannen_ominaisuudet/Briketointi_demo" HeaderControl="" Editable="true" Mapping="Runtime" Description="Parameter description" Usage="ReportPath" Overridable="True" Group="" DisplayIndex="1" />
     </Parameters>
     <Connections>
       <Connection ID="1035" Type="ConstantConnection" LanguageConversion="false" Constant="localhost" />
